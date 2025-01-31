@@ -107,7 +107,7 @@ header.scrolled
 .Page_Background img
 {
     width: 100%;            /* Make image scale with the parent */
-    min-width: 1920px;
+    /* min-width: 1920px; */
     height: 100%;
     display: block;
 

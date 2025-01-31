@@ -71,19 +71,18 @@ header.scrolled
 
 .Page_Title
 {
-    font-size: 80px;
+    font-size: clamp(40px, 6vw, 80px);
     font-weight: 450;
-    line-height: 48px;
+    line-height: 150%;
 
     text-align: center;
-    padding-bottom: 40px;
 }
 
 .Page_Description
 {
-    font-size: 20px;
+    font-size: clamp(10px, 2vw, 20px);
     font-weight: 50;
-    line-height: 28px;
+    line-height: 150%;
     color: rgb(150, 150, 150);
 
     text-align: center;
@@ -107,7 +106,6 @@ header.scrolled
 .Page_Background img
 {
     width: 100%;            /* Make image scale with the parent */
-    /* min-width: 1920px; */
     height: 100%;
     display: block;
 

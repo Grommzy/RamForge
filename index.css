@@ -71,12 +71,12 @@ header.scrolled
 
 .Page_Title
 {
-    font-size: 44px;
+    font-size: 80px;
     font-weight: 450;
     line-height: 48px;
 
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .Page_Description

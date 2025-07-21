@@ -13,13 +13,23 @@ window.addEventListener("scroll", function()
     }
 });
 
-// Background Parallax
+// Background Parallax - SLOW
 window.addEventListener("scroll", function ()
 {
     let scrollY = window.scrollY;
-    let parallaxElement = document.querySelector(".Parallax");
+    let parallaxElement = document.querySelector(".Parallax_SLOW");
     
     let speedFactor = 0.5; // Change this for different speeds (0.5 = half speed)
+    parallaxElement.style.transform = `translate(0, ${scrollY * speedFactor}px)`;
+});
+
+// Background Parallax - FAST
+window.addEventListener("scroll", function ()
+{
+    let scrollY = window.scrollY;
+    let parallaxElement = document.querySelector(".Parallax_FAST");
+    
+    let speedFactor = -1; // Change this for different speeds (-1 = double speed)
     parallaxElement.style.transform = `translate(0, ${scrollY * speedFactor}px)`;
 });
 

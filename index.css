@@ -19,14 +19,13 @@ html, body
 .Page_Content
 {
     position: relative;
-    padding: 20vh 0 18vh;
+    padding: 12vh 0 18vh;
 }
 
 .Container
 {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0px 40px
 }
 
 header
@@ -69,6 +68,25 @@ header.scrolled
     background-repeat: no-repeat;
 }
 
+.Page_Logo
+{
+    position: relative;
+    /* outline: 1px solid red;     /* Debug */ 
+
+    background-image: url(resources/index/RamForge_Logo_Simple.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 1vw;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 20vw;
+    height: auto;
+}
+
 .Page_Title
 {
     font-size: clamp(40px, 6vw, 80px);
@@ -86,38 +104,6 @@ header.scrolled
     color: rgb(150, 150, 150);
 
     text-align: center;
-}
-
-.Language_Container
-{
-    padding: 20vh 0 1vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.Language_Element
-{
-    width: 100%;
-    overflow: hidden;   /* Ensures that the hidden info is clipped */
-    border-bottom: 1px solid #ddd;
-}
-
-.Language_Bar
-{
-    width: 100%;
-    padding: 1vw;
-    cursor: pointer;
-}
-
-.Language_Description
-{
-    height: 0;                      /* Collapsed by default */
-    overflow: hidden;
-    transition: height 0.5s ease;
-
-    background-color: rgba(20, 20, 20, 0.25);
-    backdrop-filter: blur(10px);
 }
 
 /* <Page Background> */
